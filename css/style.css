@@ -1,4 +1,5 @@
-/* THEMES: level 1 = darkest (default). Higher levels are lighter and the text turns darker. */
+/* THEMES: level 1 = darkest (default). Higher levels are lighter and the text turns darker.
+   >>> TO CHANGE TEXT COLOURS: edit the lines marked "TEXT:" below (level 1), then level 2/3/4 further down. <<< */
 :root,:root[data-theme="1"]{
   --crimson:#b3122b;
   --crimson-deep:#7a0d1d;
@@ -7,12 +8,12 @@
   --bg-rgb:27,28,31;
   --anthracite-2:#222327;    /* cards / boxes */
   --anthracite-3:#2a2b30;
-  --ivory:#efeae2;           /* main text */
-  --strong:#ffffff;          /* headings / hover */
-  --body:#d9d4cc;            /* paragraphs */
-  --taupe:#a39989;           /* secondary text */
-  --silver:#c9ccd2;          /* accent text + borders */
-  --silver-dim:#8b8f97;      /* muted text */
+  --ivory:#f8f5f0;           /* TEXT: main text colour */
+  --strong:#ffffff;          /* TEXT: headings, card titles, hover */
+  --body:#eeeae4;            /* TEXT: paragraphs (Who we are, Contact) */
+  --taupe:#d2cbbf;           /* TEXT: small descriptions (cards, roles) */
+  --silver:#e2e4e8;          /* TEXT: menu links, quote, e-mail link + borders */
+  --silver-dim:#b4b8c0;      /* TEXT: form labels, footer, small captions */
   --line:rgba(201,204,210,.18);
   --line-soft:rgba(201,204,210,.08);
   --nav-bg:rgba(27,28,31,.78);
@@ -22,7 +23,7 @@
   --glow2:rgba(201,204,210,.05);
   --alt-wash:rgba(255,255,255,.025);
   --contact-wash:rgba(122,13,29,.12);
-  --ph:rgba(201,204,210,.35);
+  --ph:rgba(226,228,232,.45);
   --error:#ff6b7d;
   --hero-tone:27,28,31;
   --plant-filter:none;--plant-op:.34;
@@ -32,7 +33,7 @@
   --crimson:#e5364f;
   --anthracite:#41434a;--bg-b:#35373d;--bg-rgb:65,67,74;
   --anthracite-2:#4a4c54;--anthracite-3:#53555d;
-  --ivory:#f4f0ea;--strong:#ffffff;--body:#e8e4dd;--taupe:#d2c9bb;--silver:#e1e3e7;--silver-dim:#b7bac2;
+  --ivory:#fbf9f6;--strong:#ffffff;--body:#f3efe9;--taupe:#e3dccf;--silver:#eef0f3;--silver-dim:#d0d3d9;
   --line:rgba(255,255,255,.22);--line-soft:rgba(255,255,255,.10);
   --nav-bg:rgba(58,60,66,.84);--form-bg:rgba(255,255,255,.06);--shadow:rgba(0,0,0,.35);
   --glow1:rgba(179,18,43,.16);--glow2:rgba(255,255,255,.06);
@@ -114,11 +115,11 @@ h2{font-size:clamp(2rem,4vw,3.2rem);margin-bottom:1.4rem;letter-spacing:.02em}
     radial-gradient(ellipse at center,rgba(var(--hero-tone),.12) 0%,rgba(var(--hero-tone),.72) 72%,rgb(var(--hero-tone)) 100%),
     linear-gradient(180deg,rgba(var(--hero-tone),.55),rgba(var(--hero-tone),.1) 40%,rgb(var(--hero-tone)) 100%)}
 .hero-content{position:relative;padding:130px 24px 110px;max-width:1200px;width:100%}
-.hero .eyebrow{color:#c9ccd2;}
+.hero .eyebrow{color:#e6e8ec;}
 .hero .eyebrow::after{margin-left:auto;margin-right:auto;background:var(--crimson)}
 .hero-title{font-size:clamp(2.4rem,7.2vw,6rem);letter-spacing:.1em;padding-left:.1em;white-space:nowrap;text-transform:uppercase;font-weight:400}
-.hero-sub{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(1.3rem,2.6vw,1.9rem);margin:.6rem 0 1.6rem;color:#b3a998;letter-spacing:.08em}
-.hero-name{letter-spacing:.5em;text-transform:uppercase;font-size:.72rem;font-weight:400;margin-bottom:3rem;color:#c9ccd2}
+.hero-sub{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(1.3rem,2.6vw,1.9rem);margin:.6rem 0 1.6rem;color:#d9d0be;letter-spacing:.08em}
+.hero-name{letter-spacing:.5em;text-transform:uppercase;font-size:.72rem;font-weight:400;margin-bottom:3rem;color:#e6e8ec}
 .cta{display:inline-block;background:transparent;color:var(--strong);text-decoration:none;padding:15px 40px;border:1px solid var(--silver);font-weight:400;letter-spacing:.28em;text-transform:uppercase;font-family:inherit;font-size:.72rem;cursor:pointer;transition:.3s}
 .hero .cta{color:#fff;border-color:#c9ccd2}
 .cta:hover{background:var(--crimson);color:#fff;border-color:var(--crimson);box-shadow:0 10px 40px rgba(179,18,43,.35)}
